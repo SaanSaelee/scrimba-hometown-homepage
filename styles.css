@@ -71,13 +71,14 @@ nav {
 .btn__sign-in,
 .btn__sign-up {
   font-family: inherit;
-  font-weight: 500;
+  font-weight: 400;
   cursor: pointer;
 }
 
 .btn__sign-up {
   padding: 0.5em 1.5em;
   font-size: 1.1rem;
+  font-weight: 500;
 }
 
 .cta {
@@ -123,7 +124,6 @@ nav {
 
 .fa-key {
   font-size: 3rem;
-  margin-top: -50px;
   margin-bottom: 10px;
 }
 
