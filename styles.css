@@ -204,14 +204,14 @@ footer {
 
 /* ********************************* */
 
-@media only screen and (max-width: 500px) {
+@media (max-width: 500px) {
 
   .nav__list {
     font-size: 4rem;
   }
 
   .hero__title {
-
+    font-size: 6rem;
   }
 
 
