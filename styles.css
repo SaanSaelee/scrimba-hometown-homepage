@@ -29,6 +29,7 @@ li {
 
 a {
   text-decoration: none;
+  color: var(--primary);
 }
 
 img {
@@ -39,6 +40,7 @@ img {
 button {
   border: none;
   cursor: pointer;
+  text-decoration: none;
 }
 
 /* Nav */
@@ -66,6 +68,7 @@ nav {
 .btn__sign-up {
   font-family: inherit;
   font-weight: 500;
+  cursor: pointer;
 }
 
 .btn__sign-up {
@@ -93,7 +96,7 @@ nav {
 /* Sign-up form */
 
 .sign-up-form {
-  display: none;
+  /* display: none; */
   position: absolute;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
   background: #fff;
@@ -102,6 +105,7 @@ nav {
   color: #23232e;
   border-radius: 20px;
   padding: 3em;
+  max-width: 450px;
 }
 
 .sign-up-form.active {
@@ -123,7 +127,7 @@ nav {
 .input-box {
   font-size: 1rem;
   border-radius: 20px;
-  padding: 10px;
+  padding: 10px 20px;
   margin: 10px 0;
   width: 100%;
   border: 2px solid var(--primary);
@@ -131,6 +135,7 @@ nav {
 
 .input-box::placeholder {
   font-size: 1rem;
+  text-align: left;
 }
 
 .terms {
@@ -165,6 +170,7 @@ hr {
 
 .sign-in-link {
   text-decoration: underline;
+  color: blue;
 }
 
 #closebtn {
