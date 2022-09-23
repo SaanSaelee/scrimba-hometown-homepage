@@ -4,6 +4,7 @@
   --primary: #23232e;
   --clr-aqua: #33f5e0;
   --clr-lavender: #8b8dff;
+  --clr-lavender-light: #C4CEFD;
 }
 
 /* Default setting reset */
@@ -58,7 +59,7 @@ nav {
 .nav__list {
   display: flex;
   align-items: center;
-  gap: .25em;
+  gap: 0.25em;
 }
 
 .btn {
@@ -75,7 +76,7 @@ nav {
 .btn__sign-in {
   font-family: inherit;
   font-weight: 400;
-  background: transparent ;
+  background: transparent;
   outline-color: var(--clr-aqua);
   border-radius: 20px;
   padding: 0.4em 1em;
@@ -97,13 +98,19 @@ nav {
 }
 
 .btn:hover,
-.btn__sign-in:hover,
 .sign-up-btn:hover,
-.twitter-btn:hover {
+.twitter-btn:hover,
+.btn:focus,
+.sign-up-btn:focus,
+.twitter-btn:focus {
   opacity: 0.8;
 }
-
-.cta:hover {
+.btn__sign-in:hover,
+.btn__sign-in:focus {
+  opacity: 0.8;
+}
+.cta:hover,
+.cta:focus {
   box-shadow: 0 0 10px lightgrey;
   opacity: 0.9;
 }
