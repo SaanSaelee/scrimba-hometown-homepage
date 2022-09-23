@@ -18,10 +18,10 @@
     <!-- NAV SECTION -->
     <header>
       <nav class="navbar">
-        <ul class="nav-menu">
-          <li class="nav-list">Sign in</li>
+        <ul class="nav__list">
+          <li class="nav__item">Sign in</li>
           <li>
-            <button class="nav-btn">Sign up</button>
+            <button class="btn__signup">Sign up</button>
           </li>
         </ul>
       </nav>
@@ -36,7 +36,7 @@
       </div>
     </section>
 
-    <!-- ACTIVITIES SECTION -->
+    <!-- EXPERIENCES SECTION -->
     <section id="experiences">
       <div class="experiences__container">
         <div class="experiences__wrap">
@@ -53,7 +53,7 @@
                   <p class="experiences__tour">Tour: $120</p>
                 </div>
                 <div>
-                  <a href="#" class="buy">Buy Experience</a>
+                  <a href="#" class="cta">Add Experience</a>
                 </div>
               </div>
               <p class="experiences__desc">
@@ -79,7 +79,7 @@
                   <p class="experiences__tour">Tour: $60</p>
                 </div>
                 <div>
-                  <a href="#" class="buy">Buy Experience</a>
+                  <a href="#" class="cta">Add Experience</a>
                 </div>
               </div>
               <p class="experiences__desc">
@@ -106,7 +106,7 @@
                   <p class="experiences__tour">Tour: $80</p>
                 </div>
                 <div>
-                  <a href="#" class="buy">Buy Experience</a>
+                  <a href="#" class="cta">Add Experience</a>
                 </div>
               </div>
               <p class="experiences__desc">
@@ -131,7 +131,7 @@
                   <p class="experiences__tour">Tour: $70</p>
                 </div>
                 <div>
-                  <a href="#" class="buy">Buy Experience</a>
+                  <a href="#" class="cta">Add Experience</a>
                 </div>
               </div>
               <p class="experiences__desc">
@@ -156,7 +156,7 @@
                   <p class="experiences__tour">Tour: $40</p>
                 </div>
                 <div>
-                  <a href="#" class="buy">Buy Experience</a>
+                  <a href="#" class="cta">Add Experience</a>
                 </div>
               </div>
               <p class="experiences__desc">
@@ -183,7 +183,7 @@
                   <p class="experiences__tour">Tour: $50</p>
                 </div>
                 <div>
-                  <a href="#" class="buy">Buy Experience</a>
+                  <a href="#" class="cta">Add Experience</a>
                 </div>
               </div>
               <p class="experiences__desc">
@@ -199,54 +199,118 @@
 
     <!-- GUIDE SECTION -->
     <section id="guide">
+      <h3 class="guide__header--main">
+        Choose your guide. A great guide can go a long way.
+      </h3>
       <div class="guide__container">
-        <h3 class="guide__title">
-          Choose your guide. A great guide can go a long way.
-        </h3>
-
-        <div class="guide__title--wrap">
+        <div class="guide__wrap">
           <div class="guide">
             <img
               class="guide__img"
               src="images/rodrigo-ramos-PAz-kD7cqC8-unsplash.jpg"
               alt="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, delectus!"
             />
-            <p class="experiences__title">Rodrigo</p>
-            <p class="experiences__tour">Rate: $39 p/hr</p>
-          </div>
-          <div class="guide">
-            <img
-              class="guide__img"
-              src="images/holly-mandarich-UVyOfX3v0Ls-unsplash.jpg"
-              alt="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, delectus!"
-            />
-            <p class="experiences__title">Holly</p>
-            <p class="experiences__tour">Rate: $59 p/hr</p>
+            <div class="guide__body--wrap">
+              <div class="guide__header">
+                <div>
+                  <p class="guide__title">Rodrigo</p>
+                  <p class="guide__tour">Rate: $20 p/hr</p>
+                </div>
+                <div>
+                  <a href="#" class="cta">Add Guide</a>
+                </div>
+              </div>
+              <p class="guide__desc">
+                I am a huge traveler, so I know how it feels like to be in a
+                foreign country. I was born and raised here in Reykavik and can
+                show you anything you'd like to see.
+              </p>
+            </div>
           </div>
         </div>
 
-        <div class="guide__title--wrap">
-          <div class="guide">
-            <img
-              class="guide__img"
-              src="images/willian-justen-de-vasconcellos-lQ6nepOAGg4-unsplash.jpg"
-              alt="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, delectus!"
-            />
-            <p class="experiences__title">Willian</p>
-            <p class="experiences__tour">Rate: $49 p/hr</p>
-          </div>
+        <div class="guide__wrap">
           <div class="guide">
             <img
               class="guide__img"
               src="images/andrei-mike-QXju-EIkTiM-unsplash.jpg"
               alt="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, delectus!"
             />
-            <p class="experiences__title">Andrei</p>
-            <p class="experiences__tour">Rate: $99 p/hr</p>
+            <div class="guide__body--wrap">
+              <div class="guide__header">
+                <div>
+                  <p class="guide__title">Andrei</p>
+                  <p class="guide__tour">Rate: $50 p/hr</p>
+                </div>
+                <div>
+                  <a href="#" class="cta">Add Guide</a>
+                </div>
+              </div>
+              <p class="guide__desc">
+                I'm here if you want to explore the most beautiful spots. I've
+                been to 25 countries so far, so I know exactly what a traveler
+                would like to see when they travel.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="guide__wrap">
+          <div class="guide">
+            <img
+              class="guide__img"
+              src="images/willian-justen-de-vasconcellos-lQ6nepOAGg4-unsplash.jpg"
+              alt="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, delectus!"
+            />
+            <div class="guide__body--wrap">
+              <div class="guide__header">
+                <div>
+                  <p class="guide__title">Anne</p>
+                  <p class="guide__tour">Rate: $40 p/hr</p>
+                </div>
+                <div>
+                  <a href="#" class="cta">Add Guide</a>
+                </div>
+              </div>
+              <p class="guide__desc">
+                I studied Business Management and Tourism in Madrid and Bremen
+                (Germany). I am passionate about traveling, meeting new people
+                and discovering different cultures. I am always hungry for food,
+                wine & beer and art! And I also love reading and attending
+                theatre shows.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="guide__wrap">
+          <div class="guide">
+            <img
+              class="guide__img"
+              src="images/holly-mandarich-UVyOfX3v0Ls-unsplash.jpg"
+              alt="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, delectus!"
+            />
+            <div class="guide__body--wrap">
+              <div class="guide__header">
+                <div>
+                  <p class="guide__title">Holly</p>
+                  <p class="guide__tour">Rate: $30 p/hr</p>
+                </div>
+                <div>
+                  <a href="#" class="cta">Add Guide</a>
+                </div>
+              </div>
+              <p class="guide__desc">
+                I absolutely love the outdoors and the natural beauty of nature.
+                I can show you all of the majestic scenery that Iceland has to
+                offer.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
     <footer>
       <p>© 2022 Iceland Exploration, Inc.</p>
     </footer>

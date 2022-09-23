@@ -1,8 +1,8 @@
 /* Root Styles */
 
-root {
+:root {
   --primary: #23232e;
-
+  --iceland: #33f5e0;
 }
 
 /* Universal setting reset */
@@ -33,7 +33,25 @@ a {
 
 img {
   display: block;
-  max-width: 100%;
+  max-width: 1;
+}
+
+button,
+.cta {
+  background: var(--iceland);
+  color: var(--primary);
+  border: none;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: 500;
+  padding: 0.5em 1.5em;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.cta {
+  font-size: .9rem;
+  padding: 0.75em 1.5em;
 }
 
 /* Nav */
@@ -41,38 +59,29 @@ nav {
   position: absolute;
   color: #fff;
   right: 0;
-  padding: 20px;
+  padding: 2em;
 }
 
-.nav-menu {
+.nav__list {
   display: flex;
   align-items: center;
-  list-style: none;
+  font-size: 1.15em;
   gap: 20px;
 }
 
-.nav-list {
+.nav__item {
   cursor: pointer;
   outline: #fff;
 }
 
-.nav-btn {
-  padding: 10px 20px;
-  border-radius: 20px;
-  background-color: #fff;
-  font-family: inherit;
-  font-size: inherit;
-  border: none;
-  cursor: pointer;
-}
-
-.nav-btn:hover {
-  opacity: 0.9;
+.nav__btn:hover,
+.nav__item:hover {
+  opacity: 0.8;
 }
 
 /* Hero */
 #hero {
-  background-image: url("images/icelandexploration.jpg");
+  background-image: url("images/iceland-the-northern-lights.png");
   background-size: cover;
   color: #fff;
   min-height: 100vh;
@@ -116,13 +125,21 @@ input::placeholder {
   font-weight: 500;
 }
 
-/* Experiences */
+/* Experiences & Guide*/
 
-#experiences {
+#experiences,
+#guide {
   padding: 3em;
 }
 
-.experiences__container {
+.guide__header--main {
+  font-size: 2rem;
+  font-weight: normal;
+  text-align: center;
+}
+
+.experiences__container,
+.guide__container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -135,14 +152,24 @@ input::placeholder {
   width: 30%;
 }
 
+.guide__wrap {
+  width: 20%;
+}
+
 .experiences__img,
 .guide__img {
-  /* object-fit: contain; */
   border-radius: 20px;
   margin-bottom: 10px;
   cursor: pointer;
-  max-width: 600px;
   width: 100%;
+}
+
+.experiences__img {
+  max-width: 600px;
+}
+
+.guide__img {
+  max-width: 400px;
 }
 
 .experiences__img:hover,
@@ -150,67 +177,43 @@ input::placeholder {
   opacity: 0.8;
 }
 
-.experiences__body--wrap {
+.experiences__body--wrap,
+.guide__body--wrap {
   padding: 0 1em 1em;
 }
 
-.experiences__header {
+.experiences__header,
+.guide__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.buy {
-  background: rgba(51, 245, 224, 1);
-  color: var(--primary);
-  border-radius: 20px;
-  padding: .5em 1.1em;
-}
-
-.experiences__title {
+.experiences__title,
+.guide__title {
   font-size: 1.25rem;
 }
 
-.experiences__tour {
+.experiences__tour,
+.guide__tour {
   font-weight: 300;
   font-size: smaller;
   color: darkgray;
 }
 
-.experiences__desc {
+.experiences__desc,
+.guide__desc {
   margin-top: 1em;
   font-weight: 300;
-  font-size: .9rem;
-}
-
-/* Guide */
-
-.guide__container {
-  padding: 25px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.guide__title {
-  margin-bottom: 20px;
-}
-
-.guide {
-  margin-bottom: 30px;
-}
-
-.guide__title--wrap {
-  display: flex;
-  gap: 25px;
+  font-size: 0.9rem;
 }
 
 /* Footer */
 footer {
-  border-top: 1px solid lightgray;
-  height: 70px;
-  font-size: 12px;
   display: flex;
   justify-content: center;
+  background: var(--iceland);
   align-items: center;
+  font-size: 12px;
+  padding: 5em;
 }
