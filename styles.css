@@ -102,7 +102,7 @@ nav {
 /* Sign-up form */
 
 .sign-up-form {
-  /* display: none; */
+  display: none;
   position: absolute;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
   background: #fff;
@@ -230,11 +230,13 @@ hr {
 
 .hero__title {
   font-size: 4rem;
+  user-select: none;
 }
 
 .hero__desc {
   font-weight: 400;
   margin-bottom: 1.25em;
+  user-select: none;
 }
 
 .search {
@@ -327,6 +329,11 @@ input::placeholder {
   margin-top: 1em;
   font-weight: 300;
   font-size: 0.9rem;
+}
+
+.experiences__desc::selection,
+.guide__desc::selection {
+  background: var(--clr-aqua);
 }
 
 /* Footer */
