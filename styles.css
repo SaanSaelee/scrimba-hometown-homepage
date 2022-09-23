@@ -74,7 +74,7 @@ nav {
 }
 
 .cta {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   padding: 0.75em 1.5em;
 }
 
@@ -213,9 +213,31 @@ footer {
   padding: 5em;
 }
 
+/* ****************************** Small screens ****************************** */
+
+@media only screen and (max-width: 1180px) {
+  .experiences__wrap {
+    position: relative;
+    width: 45%;
+  }
+
+  .guide__wrap {
+    width: 45%;
+  }
+
+  .experiences__header,
+  .guide__header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1em;
+    margin-bottom: 2em;
+  }
+}
+
 /* ****************************** Mobile ****************************** */
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   nav {
     padding: 1em;
   }
@@ -260,7 +282,7 @@ footer {
   }
 
   .experiences__desc,
-.guide__desc {
-  margin-bottom: 1em;
-}
+  .guide__desc {
+    margin-bottom: 1em;
+  }
 }
