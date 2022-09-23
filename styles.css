@@ -178,11 +178,6 @@ input::placeholder {
   opacity: 0.8;
 }
 
-.experiences__body--wrap,
-.guide__body--wrap {
-  padding: 0 1em 1em;
-}
-
 .experiences__header,
 .guide__header {
   display: flex;
