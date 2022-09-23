@@ -36,22 +36,9 @@ img {
   max-width: 1;
 }
 
-button,
-.cta {
-  background: var(--iceland);
-  color: var(--primary);
+button {
   border: none;
-  font-size: inherit;
-  font-family: inherit;
-  font-weight: 500;
-  padding: 0.5em 1.5em;
-  border-radius: 20px;
   cursor: pointer;
-}
-
-.cta {
-  font-size: .9rem;
-  padding: 0.75em 1.5em;
 }
 
 /* Nav */
@@ -69,15 +56,33 @@ nav {
   gap: 20px;
 }
 
-.nav__item {
-  cursor: pointer;
-  outline: #fff;
+.btn {
+  border-radius: 20px;
+  background: var(--iceland);
 }
 
-.btn__signup:hover,
-.nav__item:hover,
-.cta:hover {
+.btn__signup {
+  font-family: inherit;
+  font-size: inherit;
+
+  font-weight: 500;
+  color: var(--primary);
+  padding: 0.5em 1.5em;
+}
+
+.cta {
+  font-size: 0.9rem;
+  padding: 0.75em 1.5em;
+}
+
+.btn:hover,
+.nav__item:hover {
   opacity: 0.8;
+}
+
+.cta:hover {
+  box-shadow: 0 0 10px lightgrey;
+  opacity: 0.9;
 }
 
 /* Hero */
@@ -128,11 +133,6 @@ input::placeholder {
 
 /* Experiences & Guide*/
 
-#experiences,
-#guide {
-  padding: 3em;
-}
-
 .guide__header--main {
   font-size: 2rem;
   font-weight: normal;
@@ -145,7 +145,7 @@ input::placeholder {
   justify-content: center;
   flex-wrap: wrap;
   gap: 25px;
-  padding: 25px;
+  padding: 5em;
 }
 
 .experiences__wrap {
