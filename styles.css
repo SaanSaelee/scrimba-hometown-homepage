@@ -101,7 +101,7 @@ nav {
 /* Sign-up form */
 
 .sign-up-form {
-  display: none;
+  /* display: none; */
   position: absolute;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
   background: #fff;
@@ -151,13 +151,17 @@ nav {
 }
 
 .input-box::placeholder {
-  font-size: 1rem;
-  text-align: left;
+  font-size: 0.9rem;
+}
+
+.terms-wrap {
+  display: flex;
+  justify-content: center;
+  font-size: 0.8rem;
 }
 
 .sign-up-desc {
-  margin: 10px 0;
-  font-size: 0.8rem;
+  margin-left: 8px;
 }
 
 .sign-up-btn {
