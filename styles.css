@@ -74,8 +74,9 @@ nav {
   outline: #fff;
 }
 
-.nav__btn:hover,
-.nav__item:hover {
+.btn__signup:hover,
+.nav__item:hover,
+.cta:hover {
   opacity: 0.8;
 }
 
