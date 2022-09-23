@@ -92,12 +92,6 @@ nav {
 
 /* Sign-up form */
 
-/* #hero.blur.active {
-  filter: blur(10px);
-  pointer-events: none;
-  user-select: none;
-} */
-
 .sign-up-form {
   display: none;
   position: absolute;
@@ -108,6 +102,10 @@ nav {
   color: #23232e;
   border-radius: 20px;
   padding: 3em;
+}
+
+.sign-up-form.active {
+  display: block;
 }
 
 .fa-key {
@@ -183,8 +181,6 @@ hr {
   cursor: pointer;
 }
 
-
-
 /* Hero */
 .hero {
   background-image: url("images/iceland-the-northern-lights.png");
@@ -231,11 +227,11 @@ input::placeholder {
   text-align: center;
 }
 
-/* .hero.blur.active {
+#hero.active {
   filter: blur(10px);
   pointer-events: none;
   user-select: none;
-} */
+}
 
 /* Experiences & Guide*/
 

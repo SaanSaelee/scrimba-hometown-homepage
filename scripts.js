@@ -12,13 +12,13 @@
 //   popup.classList.toggle("active");
 // }
 
-const popup = document.querySelector(".popup");
+const signUpForm = document.querySelector(".sign-up-form");
 const closeBtn = document.getElementById("closebtn");
 const signUpBtn = document.querySelector(".btn__sign-up");
 const hero = document.querySelector(".hero");
 
 signUpBtn.onclick = function () {
-  popup.style.display = "block";
+  signUpForm.classList.toggle("active");
 };
 
 // closeBtn.onclick = function () {
@@ -26,8 +26,10 @@ signUpBtn.onclick = function () {
 // };
 
 window.onclick = function (event) {
-  console.log(event)
+  console.log(event);
   if (event.target == hero) {
-    popup.style.display = "none";
+    signUpForm.style.display = "none";
+    signUpForm.classList.toggle("active");
   }
+  
 };
