@@ -127,12 +127,6 @@ input::placeholder {
 
 /* Experiences & Guide*/
 
-.guide__header--main {
-  font-size: 2rem;
-  font-weight: normal;
-  text-align: center;
-}
-
 .experiences__container,
 .guide__container {
   display: flex;
@@ -149,6 +143,13 @@ input::placeholder {
 
 .guide__wrap {
   width: 20%;
+}
+
+.guide__header--main {
+  font-size: 2rem;
+  font-weight: normal;
+  text-align: center;
+  padding: .25em 1em;
 }
 
 .experiences__img,
@@ -199,17 +200,21 @@ footer {
   background: var(--iceland);
   align-items: center;
   font-size: 0.8rem;
+  margin-top: 3em;
   padding: 5em;
 }
 
 @media only screen and (max-width: 500px) {
-
   nav {
     padding: 1em;
   }
 
   .nav__list {
     font-size: 1rem;
+  }
+
+  .cta {
+    font-size: 0.8rem;
   }
 
   .hero__title {
@@ -228,5 +233,18 @@ footer {
     font-size: 1rem;
   }
 
+  .experiences__container,
+  .guide__container {
+    flex-direction: column;
+    padding: 2em;
+  }
 
+  .experiences__wrap {
+    position: relative;
+    width: 100%;
+  }
+
+  .guide__wrap {
+    width: 100%;
+  }
 }
