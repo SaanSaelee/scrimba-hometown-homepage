@@ -258,4 +258,9 @@ footer {
   .guide__wrap {
     width: 100%;
   }
+
+  .experiences__desc,
+.guide__desc {
+  margin-bottom: 1em;
+}
 }
