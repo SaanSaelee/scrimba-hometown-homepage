@@ -47,44 +47,81 @@
     <section id="hero" class="hero blur">
       <div class="hero__main">
         <h1 class="hero__title">Iceland</h1>
-        <h3 class="hero__desc">Explore the country of ice and fire.</h3>
+        <p class="hero__desc">Explore the country of ice and fire.</p>
         <input class="search" type="text" placeholder="Search Iceland" />
       </div>
 
       <div class="sign-up-form">
         <i class="fa-solid fa-xmark closebtn"></i>
         <i class="fa-solid fa-key"></i>
-        <h1 class="sign-up-title">Sign Up Now</h1>
-        <form action="" method="GET">
-          <input type="text" class="input-box" placeholder="Enter your name" />
-          <input
-            type="email"
-            class="input-box"
-            placeholder="Enter your email"
-            required
-          />
-          <input
-            type="password"
-            class="input-box"
-            placeholder="Enter your password"
-            required
-          />
-          <input
-            type="password"
-            class="input-box"
-            placeholder="Confirm your password"
-          />
+
+        <!-- Start form -->
+        <form action="/" method="GET" class="modal-form" id="form">
+          <h1 class="sign-up-title">Sign Up Now</h1>
+          <div class="form-validation">
+            <input
+              type="text"
+              class="input-box modal-input"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+            <p>Error Message</p>
+          </div>
+
+          <div class="form-validation">
+            <input
+              type="email"
+              class="input-box modal-input"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+            <p>Error Message</p>
+          </div>
+
+          <div class="form-validation">
+            <input
+              type="password"
+              class="input-box modal-input"
+              id="password"
+              name="password"
+              placeholder="Enter your password"
+              required
+            />
+            <p>Error Message</p>
+          </div>
+
+          <div class="form-validation">
+            <input
+              type="password"
+              class="input-box modal-input"
+              id="password-confirm"
+              name="password"
+              placeholder="Confirm your password"
+            />
+            <p>Error Message</p>
+          </div>
+
           <div class="terms-wrap">
             <input type="checkbox" id="terms" required />
-            <label for="terms" class="sign-up-desc"">I agree to the terms
-              of services.</label>
-            </div>
-          <button type="button" class="sign-up-btn btn-clr-text">Sign Up</button>
+            <label for="terms" class="sign-up-desc"
+              >I agree to the terms of services.</label
+            >
+          </div>
+          <button type="button" class="sign-up-btn btn-clr-text">
+            Sign Up
+          </button>
+
           <hr />
+
           <p class="or">OR</p>
           <button type="submit" class="sign-up-btn twitter-btn btn-clr-text">
             Login with Twitter
           </button>
+
           <p class="sign-up-desc">
             Already have an account? Login
             <a class="sign-in-link" href="#">here</a>
