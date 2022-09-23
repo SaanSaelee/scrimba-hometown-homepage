@@ -3,7 +3,7 @@
 :root {
   --primary: #23232e;
   --clr-aqua: #33f5e0;
-  --clr-lavender:#8B8DFF;
+  --clr-lavender: #8b8dff;
 }
 
 /* Default setting reset */
@@ -71,6 +71,7 @@ nav {
 .btn__sign-up {
   color: var(--primary);
   padding: 0.5em 1.5em;
+  font-size: 1.1rem;
 }
 
 .cta {
@@ -91,11 +92,14 @@ nav {
 
 /* Sign-up form */
 
-.overlay {
-}
-
+/* #hero.blur.active {
+  filter: blur(10px);
+  pointer-events: none;
+  user-select: none;
+} */
 
 .sign-up-form {
+  display: none;
   position: absolute;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
   background: #fff;
@@ -104,7 +108,6 @@ nav {
   color: #23232e;
   border-radius: 20px;
   padding: 3em;
-  transition: 500ms ease;
 }
 
 .fa-key {
@@ -133,7 +136,7 @@ nav {
 }
 
 .terms {
-margin: 10px 0;
+  margin: 10px 0;
 }
 
 .sign-up-btn {
@@ -151,8 +154,8 @@ margin: 10px 0;
 }
 
 hr {
-margin: 0 auto;  
-margin-top: 20px;
+  margin: 0 auto;
+  margin-top: 20px;
   width: 80%;
 }
 
@@ -166,8 +169,24 @@ margin-top: 20px;
   text-decoration: underline;
 }
 
+#closebtn {
+  position: absolute;
+  top: -10;
+  right: -10;
+  width: 30px;
+  height: 30px;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  font-size: 20px;
+  color: red;
+  cursor: pointer;
+}
+
+
+
 /* Hero */
-#hero {
+.hero {
   background-image: url("images/iceland-the-northern-lights.png");
   background-size: cover;
   color: #fff;
@@ -212,8 +231,11 @@ input::placeholder {
   text-align: center;
 }
 
-.sign-up-form {
-}
+/* .hero.blur.active {
+  filter: blur(10px);
+  pointer-events: none;
+  user-select: none;
+} */
 
 /* Experiences & Guide*/
 
