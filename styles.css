@@ -238,6 +238,11 @@ footer {
 /* ****************************** Mobile ****************************** */
 
 @media only screen and (max-width: 600px) {
+
+  #hero {
+    margin-bottom: 1em;
+  }
+  
   nav {
     padding: 1em;
   }
