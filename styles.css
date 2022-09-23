@@ -64,6 +64,10 @@ nav {
   font-size: inherit;
 }
 
+.btn-clr-text {
+  color: var(--primary);
+}
+
 .btn__sign-in,
 .btn__sign-up {
   font-family: inherit;
@@ -72,7 +76,6 @@ nav {
 }
 
 .btn__sign-up {
-  color: var(--primary);
   padding: 0.5em 1.5em;
   font-size: 1.1rem;
 }
@@ -84,7 +87,9 @@ nav {
 }
 
 .btn:hover,
-.btn__sign-in:hover {
+.btn__sign-in:hover,
+.sign-up-btn:hover,
+.twitter-btn:hover {
   opacity: 0.8;
 }
 
@@ -96,7 +101,7 @@ nav {
 /* Sign-up form */
 
 .sign-up-form {
-  /* display: none; */
+  display: none;
   position: absolute;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
   background: #fff;
@@ -112,11 +117,22 @@ nav {
   display: block;
 }
 
+.fa-solid {
+  color: var(--primary);
+}
+
 .fa-key {
-  font-size: 40px;
+  font-size: 3rem;
   margin-top: -50px;
   margin-bottom: 10px;
-  color: var(--primary);
+}
+
+.fa-xmark {
+  position: absolute;
+  font-size: 1.5rem;
+  right: 15px;
+  top: 10px;
+  cursor: pointer;
 }
 
 .sign-up-title {
@@ -131,6 +147,7 @@ nav {
   margin: 10px 0;
   width: 100%;
   border: 2px solid var(--primary);
+  letter-spacing: 1px;
 }
 
 .input-box::placeholder {
@@ -138,8 +155,9 @@ nav {
   text-align: left;
 }
 
-.terms {
+.sign-up-desc {
   margin: 10px 0;
+  font-size: 0.8rem;
 }
 
 .sign-up-btn {

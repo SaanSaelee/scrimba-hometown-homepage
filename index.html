@@ -35,7 +35,7 @@
         <ul class="nav__list">
           <li class="btn__sign-in">Sign in</li>
           <li>
-            <button class="btn__sign-up btn">Sign up</button>
+            <button class="btn__sign-up btn btn-clr-text">Sign up</button>
           </li>
         </ul>
       </nav>
@@ -50,10 +50,11 @@
       </div>
 
       <div class="sign-up-form">
+        <i class="fa-solid fa-xmark closebtn"></i>
         <i class="fa-solid fa-key"></i>
         <h1 class="sign-up-title">Sign Up Now</h1>
         <form action="" method="GET">
-          <input type="text" class="input-box" placeholder="Enter your name">
+          <input type="text" class="input-box" placeholder="Enter your name" />
           <input
             type="email"
             class="input-box"
@@ -66,22 +67,25 @@
             placeholder="Enter your password"
             required
           />
-          <input type="password" class="input-box" placeholder="Confirm your password">
-          <p class="terms">
-            <span><input type="checkbox" /> </span>I agree to the terms of
-            services.
+          <input
+            type="password"
+            class="input-box"
+            placeholder="Confirm your password"
+          />
+          <p class="sign-up-desc">
+            <span><input type="checkbox" required /> </span>I agree to the terms
+            of services.
           </p>
-          <button type="button" class="sign-up-btn">Sign Up</button>
+          <button type="button" class="sign-up-btn btn-clr-text">Sign Up</button>
           <hr />
           <p class="or">OR</p>
-          <button type="button" class="sign-up-btn twitter-btn">
+          <button type="button" class="sign-up-btn twitter-btn btn-clr-text">
             Login with Twitter
           </button>
-          <p>
+          <p class="sign-up-desc">
             Already have an account? Login
             <a class="sign-in-link" href="#">here</a>
           </p>
-          <!-- <button id="closebtn">x</button> -->
         </form>
       </div>
     </section>

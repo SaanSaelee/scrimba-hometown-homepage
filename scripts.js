@@ -13,23 +13,21 @@
 // }
 
 const signUpForm = document.querySelector(".sign-up-form");
-const closeBtn = document.getElementById("closebtn");
+const closeBtn = document.querySelector(".closebtn");
 const signUpBtn = document.querySelector(".btn__sign-up");
 const hero = document.querySelector(".hero");
 
-signUpBtn.onclick = function () {
+signUpBtn.onclick = () => {
   signUpForm.classList.toggle("active");
 };
 
-// closeBtn.onclick = function () {
-//   popup.style.display = "none";
-// };
+closeBtn.onclick = () => {
+  signUpForm.classList.toggle("active");
+};
 
 window.onclick = function (event) {
   console.log(event);
   if (event.target == hero) {
-    signUpForm.style.display = "none";
-    signUpForm.classList.toggle("active");
+    signUpForm.classList.remove("active");
   }
-  
 };
