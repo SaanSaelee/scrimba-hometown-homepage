@@ -373,6 +373,19 @@ footer {
     font-size: 1rem;
   }
 
+  .sign-up-form {
+    display: none;
+    position: absolute;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+    background: #fff;
+    padding: 1em;
+    text-align: center;
+    color: #23232e;
+    border-radius: 20px;
+    padding: 2em;
+    margin: 1em;
+  }
+
   .experiences__container,
   .guide__container {
     flex-direction: column;
