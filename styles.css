@@ -43,6 +43,10 @@ button {
   text-decoration: none;
 }
 
+input {
+  outline-color: var(--clr-aqua);
+}
+
 /* Nav */
 nav {
   position: absolute;
@@ -54,13 +58,13 @@ nav {
 .nav__list {
   display: flex;
   align-items: center;
-  font-size: 1.25rem;
-  gap: 1em;
+  gap: .25em;
 }
 
 .btn {
-  border-radius: 100px;
   background: var(--clr-aqua);
+  outline-color: var(--clr-lavender);
+  border-radius: 100px;
   font-size: inherit;
 }
 
@@ -68,14 +72,19 @@ nav {
   color: var(--primary);
 }
 
-.btn__sign-in,
-.btn__sign-up {
+.btn__sign-in {
   font-family: inherit;
   font-weight: 400;
-  cursor: pointer;
+  background: transparent ;
+  outline-color: var(--clr-aqua);
+  border-radius: 20px;
+  padding: 0.4em 1em;
+  font-size: 1.25rem;
+  color: #fff;
 }
 
 .btn__sign-up {
+  font-family: inherit;
   padding: 0.5em 1.5em;
   font-size: 1.1rem;
   font-weight: 500;
@@ -172,10 +181,12 @@ nav {
   font-size: 15px;
   margin: 10px 0;
   font-weight: 500;
+  outline-color: var(--clr-lavender);
 }
 
 .twitter-btn {
   background: var(--clr-lavender);
+  outline-color: var(--clr-aqua);
 }
 
 hr {
@@ -247,20 +258,10 @@ hr {
   padding: 0.5em 1.25em;
 }
 
-input {
-  outline: none;
-}
-
 input::placeholder {
   font-size: 1.25rem;
   font-weight: 500;
   text-align: center;
-}
-
-#hero.active {
-  filter: blur(10px);
-  pointer-events: none;
-  user-select: none;
 }
 
 /* Experiences & Guide*/
