@@ -52,19 +52,18 @@ nav {
 .nav__list {
   display: flex;
   align-items: center;
-  font-size: 1.15em;
-  gap: 20px;
+  font-size: 1.25rem;
+  gap: 1em;
 }
 
 .btn {
-  border-radius: 20px;
+  border-radius: 100px;
   background: var(--iceland);
+  font-size: inherit;
 }
 
 .btn__signup {
   font-family: inherit;
-  font-size: inherit;
-
   font-weight: 500;
   color: var(--primary);
   padding: 0.5em 1.5em;
@@ -97,29 +96,24 @@ nav {
 }
 
 .hero__main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 400px;
+  text-align: center;
 }
 
 .hero__title {
-  font-size: 50px;
-  margin-bottom: 10px;
+  font-size: 4rem;
 }
 
 .hero__desc {
   font-weight: 400;
-  margin-bottom: 20px;
+  margin-bottom: 1.25em;
 }
 
 .search {
-  padding: 15px 30px;
+  font-size: 1.5rem;
+  font-weight: 700;
   border-radius: 100px;
   border: none;
-  font-size: 24px;
-  font-weight: 700;
-  color: gray;
+  padding: 0.75em 1.5em;
 }
 
 input {
@@ -127,7 +121,7 @@ input {
 }
 
 input::placeholder {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 500;
 }
 
@@ -204,6 +198,21 @@ footer {
   justify-content: center;
   background: var(--iceland);
   align-items: center;
-  font-size: 12px;
+  font-size: .8rem;
   padding: 5em;
+}
+
+/* ********************************* */
+
+@media only screen and (max-width: 500px) {
+
+  .nav__list {
+    font-size: 4rem;
+  }
+
+  .hero__title {
+
+  }
+
+
 }
