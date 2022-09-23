@@ -5,7 +5,7 @@
   --iceland: #33f5e0;
 }
 
-/* Universal setting reset */
+/* Default setting reset */
 *,
 ::before,
 ::after {
@@ -198,20 +198,34 @@ footer {
   justify-content: center;
   background: var(--iceland);
   align-items: center;
-  font-size: .8rem;
+  font-size: 0.8rem;
   padding: 5em;
 }
 
-/* ********************************* */
+@media only screen and (max-width: 500px) {
 
-@media (max-width: 500px) {
+  nav {
+    padding: 1em;
+  }
 
   .nav__list {
-    font-size: 4rem;
+    font-size: 1rem;
   }
 
   .hero__title {
-    font-size: 6rem;
+    font-size: 3rem;
+  }
+
+  .hero__desc {
+    font-size: 1rem;
+  }
+
+  .search {
+    font-size: 1rem;
+  }
+
+  input::placeholder {
+    font-size: 1rem;
   }
 
 
