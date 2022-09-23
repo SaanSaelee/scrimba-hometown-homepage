@@ -1,5 +1,14 @@
+/* Root Styles */
+
+root {
+  --primary: #23232e;
+
+}
+
 /* Universal setting reset */
-* {
+*,
+::before,
+::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,7 +17,23 @@
 /* Base Styles */
 body {
   font-family: "Roboto", sans-serif;
+  color: var(--primary);
+  line-height: 1.5;
   letter-spacing: 1px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 /* Nav */
@@ -50,7 +75,7 @@ nav {
   background-image: url("images/icelandexploration.jpg");
   background-size: cover;
   color: #fff;
-  min-height: 70vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,7 +84,7 @@ nav {
 .hero__main {
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: center;
   width: 400px;
 }
 
@@ -68,7 +93,7 @@ nav {
   margin-bottom: 10px;
 }
 
-.hero__title--text {
+.hero__desc {
   font-weight: 400;
   margin-bottom: 20px;
 }
@@ -93,38 +118,74 @@ input::placeholder {
 
 /* Experiences */
 
-.exp__main {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  padding: 25px;
-  line-height: 22px;
+#experiences {
+  padding: 3em;
 }
 
-.exp__img,
+.experiences__container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 25px;
+}
+
+.experiences__wrap {
+  position: relative;
+  width: 30%;
+}
+
+.experiences__img,
 .guide__img {
-  display: block;
-  max-width: 100%;
-  object-fit: contain;
+  /* object-fit: contain; */
   border-radius: 20px;
   margin-bottom: 10px;
   cursor: pointer;
+  max-width: 600px;
+  width: 100%;
 }
 
-.exp__img:hover,
+.experiences__img:hover,
 .guide__img:hover {
   opacity: 0.8;
 }
 
-.tour {
+.experiences__body--wrap {
+  padding: 0 1em 1em;
+}
+
+.experiences__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buy {
+  background: rgba(51, 245, 224, 1);
+  color: var(--primary);
+  border-radius: 20px;
+  padding: .5em 1.1em;
+}
+
+.experiences__title {
+  font-size: 1.25rem;
+}
+
+.experiences__tour {
   font-weight: 300;
   font-size: smaller;
   color: darkgray;
 }
 
+.experiences__desc {
+  margin-top: 1em;
+  font-weight: 300;
+  font-size: .9rem;
+}
+
 /* Guide */
 
-.guide__main {
+.guide__container {
   padding: 25px;
   display: flex;
   flex-direction: column;
