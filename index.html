@@ -18,6 +18,12 @@
       rel="stylesheet"
     />
 
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/387e77bc12.js"
+      crossorigin="anonymous"
+    ></script>
+
     <!-- Favicon -->
     <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
   </head>
@@ -27,9 +33,9 @@
     <header>
       <nav class="navbar">
         <ul class="nav__list">
-          <li class="btn__signin">Sign in</li>
+          <li class="btn__sign-in">Sign in</li>
           <li>
-            <button class="btn__signup btn">Sign up</button>
+            <button class="btn__sign-up btn">Sign up</button>
           </li>
         </ul>
       </nav>
@@ -42,6 +48,34 @@
         <h3 class="hero__desc">Explore the country of ice and fire.</h3>
         <input class="search" type="text" placeholder="Search Iceland" />
       </div>
+
+      <!-- <div id="overlay"> -->
+      <div class="sign-up-form">
+        <i class="fa-solid fa-key"></i>
+        <h1 class="sign-up-title">Sign Up Now</h1>
+        <form action="" method="GET">
+          <input type="email" class="input-box" placeholder="Your Email" />
+          <input
+            type="password"
+            class="input-box"
+            placeholder="Your Password"
+          />
+          <p class="terms">
+            <span><input type="checkbox" /> </span>I agree to the terms of
+            services.
+          </p>
+          <button type="button" class="sign-up-btn">Sign up</button>
+          <hr />
+          <p class="or">OR</p>
+          <button type="button" class="sign-up-btn twitter-btn">
+            Login with Twitter
+          </button>
+          <p>
+            Do you have an account? <a class="sign-in-link" href="#">Sign in</a>
+          </p>
+        </form>
+      </div>
+      <!-- </div> -->
     </section>
 
     <!-- EXPERIENCES SECTION -->
