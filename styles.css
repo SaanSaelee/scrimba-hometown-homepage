@@ -160,8 +160,7 @@ input::placeholder {
 .experiences__img,
 .guide__img {
   border-radius: 20px;
-  margin-bottom: 10px;
-  cursor: pointer;
+  margin-bottom: 0.8em;
   width: 100%;
 }
 
@@ -171,11 +170,6 @@ input::placeholder {
 
 .guide__img {
   max-width: 400px;
-}
-
-.experiences__img:hover,
-.guide__img:hover {
-  opacity: 0.8;
 }
 
 .experiences__header,
