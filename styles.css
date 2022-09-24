@@ -1,5 +1,5 @@
 @import url("modal.css");
-@import url('experiences.css');
+@import url("experiences.css");
 
 /* Root Styles */
 
@@ -20,6 +20,7 @@
 }
 
 /* Base Styles */
+
 body {
     font-family: "Roboto", sans-serif;
     color: var(--primary);
@@ -58,12 +59,29 @@ nav {
     color: #fff;
     right: 0;
     padding: 2em;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-main {
+    max-width: 80px;
+}
+
+.logo-bottom {
+    max-width: 50px;
+    margin: 0 auto 1em;
 }
 
 .nav__list {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     gap: 0.25em;
+    width: 100%;
 }
 
 .btn {
@@ -159,12 +177,13 @@ nav {
 /* Footer */
 footer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     background: var(--clr-aqua);
     align-items: center;
     font-size: 0.8rem;
     margin-top: 3em;
-    padding: 5em;
+    padding: 3em;
 }
 
 /* ****************************** Small screens ****************************** */
