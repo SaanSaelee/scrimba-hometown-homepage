@@ -162,7 +162,7 @@ nav {
     justify-content: center;
     flex-wrap: wrap;
     gap: 25px;
-    padding: 5em;
+    padding: 3em 5em;
 }
 
 .experiences__wrap {
