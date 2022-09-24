@@ -110,7 +110,7 @@
     margin: 10px 0;
     outline-color: var(--clr-lavender);
     transition: 400ms ease;
-    font-family: inherit;
+    font-family: 400;
     padding: 0.5em 1.5em;
     font-size: 1rem;
     width: 100%;

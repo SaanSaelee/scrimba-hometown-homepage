@@ -48,7 +48,6 @@ button {
 
 input {
     outline-color: var(--clr-aqua);
-    outline-offset: 2px;
 }
 
 /* Nav */
@@ -273,13 +272,12 @@ footer {
         padding: 1em;
     }
 
-
     .hero__title {
         font-size: 2.2rem;
     }
 
     .hero__desc {
-        font-size: .8rem;
+        font-size: 0.8rem;
     }
 
     .search {
@@ -313,7 +311,7 @@ footer {
     .experiences__img {
         max-width: 100%;
     }
-    
+
     .guide__img {
         max-width: 100%;
     }
