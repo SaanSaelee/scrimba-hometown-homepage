@@ -1,0 +1,163 @@
+:root {
+    --errorColor: #f00e0e;
+    --validColor: #0add0a;
+    --clr-aqua: #33f5e0;
+    --clr-lavender: #8b8dff;
+}
+
+.modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.modal-content {
+    background: #fff;
+    margin: 10% auto;
+    max-width: 500px;
+    width: 60%;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+    position: relative;
+    border-radius: 20px;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 2%;
+    right: 3%;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.close-btn:hover {
+    cursor: pointer;
+    color: var(--clr-aqua);
+    transition: 0.2s ease-out;
+}
+
+.modal-form {
+    /* position: absolute; */
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    /* width: 90%; */
+    /* height: 90%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary);
+    padding: 2em;
+}
+
+.fa-key {
+    color: var(--primary);
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.modal-title {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.form-validation {
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+
+.modal-input {
+    font-size: 1rem;
+    border-radius: 20px;
+    padding: 10px 20px;
+    width: 100%;
+    border: 2px solid var(--primary);
+    letter-spacing: 1px;
+}
+
+.modal-input::placeholder {
+    font-size: 1rem;
+}
+
+.terms-wrap {
+    display: flex;
+    justify-content: center;
+    font-size: 0.8rem;
+}
+
+.terms-desc {
+    margin-left: 8px;
+}
+
+.modal-sign-up-btn {
+    background: var(--clr-aqua);
+}
+
+.modal-sign-up-btn,
+.twitter-btn {
+    border-radius: 20px;
+    margin: 10px 0;
+    outline-color: var(--clr-lavender);
+    transition: 400ms ease;
+    font-family: inherit;
+    padding: 0.5em 1.5em;
+    font-size: 1rem;
+    width: 100%;
+}
+
+
+
+.modal-sign-up-btn:hover,
+.modal-sign-up-btn:focus {
+    background: var(--clr-lavender);
+    outline-color: var(--clr-aqua);
+}
+
+.twitter-btn-wrap {
+    width: 100%;
+}
+
+.twitter-btn {
+    background: var(--clr-lavender);
+}
+
+.twitter-btn:hover,
+.twitter-btn:focus {
+    background: var(--clr-aqua);
+}
+
+hr {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 80%;
+}
+
+.or {
+    background: #fff;
+    width: 30px;
+    margin: -13px auto 10px;
+    text-align: center;
+}
+
+.sign-in-desc {
+    font-size: 0.9rem;
+}
+
+.sign-in-link {
+    text-decoration: underline;
+    color: blue;
+}
+
+.error {
+    display: none;
+}

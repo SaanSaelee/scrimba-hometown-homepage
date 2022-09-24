@@ -1,413 +1,497 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>The Country of Ice and Fire</title>
+        <title>The Country of Ice and Fire</title>
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="styles.css" />
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="styles.css" />
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+            rel="stylesheet"
+        />
 
-    <!-- Font Awesome -->
-    <script
-      src="https://kit.fontawesome.com/387e77bc12.js"
-      crossorigin="anonymous"
-    ></script>
+        <!-- Font Awesome -->
+        <script
+            src="https://kit.fontawesome.com/387e77bc12.js"
+            crossorigin="anonymous"
+        ></script>
 
-    <!-- Favicon -->
-    <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
-  </head>
+        <!-- Favicon -->
+        <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
+    </head>
 
-  <body>
-    <!-- NAV SECTION -->
-    <header>
-      <nav class="navbar">
-        <ul class="nav__list">
-          <li>
-            <button class="btn__sign-in">Sign in</button>
-          </li>
-          <li>
-            <button class="btn__sign-up btn btn-clr-text">Sign Up</button>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <body>
+        <!-- NAV SECTION -->
+        <header>
+            <nav class="navbar">
+                <ul class="nav__list">
+                    <li>
+                        <button class="btn__sign-in">Sign in</button>
+                    </li>
+                    <li>
+                        <button class="btn__sign-up btn btn-clr-text">
+                            Sign Up
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
-    <!-- HERO SECTION -->
-    <section id="hero" class="hero blur">
-      <div class="hero__main">
-        <h1 class="hero__title">Iceland</h1>
-        <p class="hero__desc">Explore the country of ice and fire.</p>
-        <input class="search" type="text" placeholder="Search Iceland" />
-      </div>
-
-      <div class="sign-up-form">
-        <i class="fa-solid fa-xmark closebtn"></i>
-        <i class="fa-solid fa-key"></i>
-
-        <!-- Start form -->
-        <form action="/" method="GET" class="modal-form" id="form">
-          <h1 class="sign-up-title">Sign Up Now</h1>
-          <div class="form-validation">
-            <input
-              type="text"
-              class="input-box modal-input"
-              id="name"
-              name="name"
-              placeholder="Enter your name"
-              required
-            />
-            <p>Error Message</p>
-          </div>
-
-          <div class="form-validation">
-            <input
-              type="email"
-              class="input-box modal-input"
-              id="email"
-              name="email"
-              placeholder="Enter your email"
-              required
-            />
-            <p>Error Message</p>
-          </div>
-
-          <div class="form-validation">
-            <input
-              type="password"
-              class="input-box modal-input"
-              id="password"
-              name="password"
-              placeholder="Enter your password"
-              required
-            />
-            <p>Error Message</p>
-          </div>
-
-          <div class="form-validation">
-            <input
-              type="password"
-              class="input-box modal-input"
-              id="password-confirm"
-              name="password"
-              placeholder="Confirm your password"
-            />
-            <p>Error Message</p>
-          </div>
-
-          <div class="terms-wrap">
-            <input type="checkbox" id="terms" required />
-            <label for="terms" class="sign-up-desc"
-              >I agree to the terms of services.</label
-            >
-          </div>
-          <button type="button" class="sign-up-btn btn-clr-text">
-            Sign Up
-          </button>
-
-          <hr />
-
-          <p class="or">OR</p>
-          <button type="submit" class="sign-up-btn twitter-btn btn-clr-text">
-            Login with Twitter
-          </button>
-
-          <p class="sign-up-desc">
-            Already have an account? Login
-            <a class="sign-in-link" href="#">here</a>
-          </p>
-        </form>
-      </div>
-    </section>
-
-    <!-- EXPERIENCES SECTION -->
-    <section id="experiences">
-      <div class="experiences__container">
-        <div class="experiences__wrap">
-          <div class="northern-lights">
-            <img
-              class="experiences__img"
-              src="images/nicolas-j-leclercq-va_nrBLonf8-unsplash (1).jpg"
-              alt="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, delectus!"
-            />
-            <div class="experiences__body--wrap">
-              <div class="experiences__header">
-                <div>
-                  <p class="experiences__title">Northern Lights</p>
-                  <p class="experiences__tour">Tour: $120</p>
+        <main>
+            <!-- HERO SECTION -->
+            <section id="hero">
+                <div class="hero__main">
+                    <h1 class="hero__title">Iceland</h1>
+                    <p class="hero__desc">
+                        Explore the country of ice and fire.
+                    </p>
+                    <input
+                        class="search"
+                        type="text"
+                        placeholder="Search Iceland"
+                    />
                 </div>
-                <div>
-                  <a href="#" class="cta btn">Add Experience</a>
-                </div>
-              </div>
-              <p class="experiences__desc">
-                The northern lights are a truly spectacular natural phenomenon.
-                It's one of those things that even seasoned Icelanders never get
-                enough of. They are often seen dancing across the Icelandic
-                Arctic sky in fantastic colours and vibrant hues.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="experiences__wrap">
-          <div class="black-sand">
-            <img
-              class="experiences__img"
-              src="images/adam-jang-MLKrf51NV8w-unsplash (1).jpg"
-              alt="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, delectus!"
-            />
-            <div class="experiences__body--wrap">
-              <div class="experiences__header">
-                <div>
-                  <p class="experiences__title">Three Elves</p>
-                  <p class="experiences__tour">Tour: $60</p>
-                </div>
-                <div>
-                  <a href="#" class="cta btn">Add Experience</a>
-                </div>
-              </div>
-              <p class="experiences__desc">
-                JUST OUTSIDE THE TINY TOWN of Vik, Iceland (pop. approx. 300)
-                three black basalt columns called the Reynisdrangar protrude
-                from the stormy North Atlantic. Legend has it that the rocks are
-                three trolls, caught out too late and frozen by the early
-                morning sunlight.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="experiences__wrap">
-          <div class="waterfall">
-            <img
-              class="experiences__img"
-              src="images/jonatan-pie-VlH2eHyE_50-unsplash.jpg"
-              alt="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, delectus!"
-            />
-            <div class="experiences__body--wrap">
-              <div class="experiences__header">
-                <div>
-                  <p class="experiences__title">Skogafoss</p>
-                  <p class="experiences__tour">Tour: $80</p>
-                </div>
-                <div>
-                  <a href="#" class="cta btn">Add Experience</a>
-                </div>
-              </div>
-              <p class="experiences__desc">
-                Skógafoss is one of the biggest waterfalls in Iceland, with a
-                drop of some 60 meters and a width of 25 meters, and you can
-                walk right up to, but be prepared to be drenched.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="experiences__wrap">
-          <div class="glacier">
-            <img
-              class="experiences__img"
-              src="images/jeremy-bishop-h7bQ8VEZtws-unsplash.jpg"
-              alt="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, delectus!"
-            />
-            <div class="experiences__body--wrap">
-              <div class="experiences__header">
-                <div>
-                  <p class="experiences__title">Ice Bergs</p>
-                  <p class="experiences__tour">Tour: $70</p>
-                </div>
-                <div>
-                  <a href="#" class="cta btn">Add Experience</a>
-                </div>
-              </div>
-              <p class="experiences__desc">
-                Jokulsarlon is one of Iceland's natural crown jewels, and the
-                nearby black beach has coined the name Diamond Beach, as the ice
-                chunks lying on it resemble diamonds glistening in the sun.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="experiences__wrap">
-          <div class="black-sand">
-            <img
-              class="experiences__img"
-              src="images/norris-niman-ABtmE3jhaPQ-unsplash.jpg"
-              alt="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, delectus!"
-            />
-            <div class="experiences__body--wrap">
-              <div class="experiences__header">
-                <div>
-                  <p class="experiences__title">Black Sand</p>
-                  <p class="experiences__tour">Tour: $40</p>
-                </div>
-                <div>
-                  <a href="#" class="cta btn">Add Experience</a>
-                </div>
-              </div>
-              <p class="experiences__desc">
-                Iceland is a country full of volcanic activity, and this is the
-                reason behind the black sand. The black sediment on the beach
-                has been formed by boiling hot lava, from the currently dormant
-                volcano, floating across the beach, then cooling and solidifying
-                when hitting the cold water.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="experiences__wrap">
-          <div class="road-trip">
-            <img
-              class="experiences__img"
-              src="images/rory-hennessey-PBrovES5uuI-unsplash.jpg"
-              alt="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, delectus!"
-            />
-            <div class="experiences__body--wrap">
-              <div class="experiences__header">
-                <div>
-                  <p class="experiences__title">Explorer</p>
-                  <p class="experiences__tour">Tour: $50</p>
-                </div>
-                <div>
-                  <a href="#" class="cta btn">Add Experience</a>
-                </div>
-              </div>
-              <p class="experiences__desc">
-                There’s nothing quite like an Iceland road trip. Especially when
-                driving past incredible volcanoes, icebergs, waterfalls, and
-                magical northern lights on Iceland’s Ring Road.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+            </section>
 
-    <!-- GUIDE SECTION -->
-    <section id="guide">
-      <h3 class="guide__header--main">
-        Choose your guide. A great guide can go a long way.
-      </h3>
-      <div class="guide__container">
-        <div class="guide__wrap">
-          <div class="guide">
-            <img
-              class="guide__img"
-              src="images/rodrigo-ramos-PAz-kD7cqC8-unsplash.jpg"
-              alt="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, delectus!"
-            />
-            <div class="guide__body--wrap">
-              <div class="guide__header">
-                <div>
-                  <p class="guide__title">Rodrigo</p>
-                  <p class="guide__tour">Rate: $20 p/hr</p>
+            <section id="form" class="form">
+                <!-- Start Form -->
+                <div class="modal" id="email-modal-container">
+                    <div class="modal-content">
+                        <form
+                            action="/"
+                            method="GET"
+                            class="modal-form"
+                            id="form"
+                        >
+                            <i class="fa-solid fa-xmark close-btn"></i>
+                            <i class="fa-solid fa-key"></i>
+                            <h1 class="modal-title">Sign Up Now</h1>
+                            <div class="form-validation">
+                                <input
+                                    type="text"
+                                    class="modal-input"
+                                    id="name"
+                                    name="name"
+                                    placeholder="Enter your name"
+                                    required
+                                />
+                                <p class="error">Error Message</p>
+                            </div>
+                            <div class="form-validation">
+                                <input
+                                    type="email"
+                                    class="modal-input"
+                                    id="email"
+                                    name="email"
+                                    placeholder="Enter your email"
+                                    required
+                                />
+                                <p class="error">Error Message</p>
+                            </div>
+                            <div class="form-validation">
+                                <input
+                                    type="password"
+                                    class="modal-input"
+                                    id="password"
+                                    name="password"
+                                    placeholder="Enter your password"
+                                    required
+                                />
+                                <p class="error">Error Message</p>
+                            </div>
+                            <div class="form-validation">
+                                <input
+                                    type="password"
+                                    class="modal-input"
+                                    id="password-confirm"
+                                    name="password"
+                                    placeholder="Confirm your password"
+                                />
+                                <p class="error">Error Message</p>
+                            </div>
+                            <div class="terms-wrap">
+                                <input type="checkbox" id="terms" required />
+                                <label for="terms" class="terms-desc"
+                                    >I agree to the terms of services.</label
+                                >
+                            </div>
+                            <button
+                                type="button"
+                                class="modal-sign-up-btn btn-clr-text"
+                            >
+                                Sign Up
+                            </button>
+                            <hr />
+                            <p class="or">OR</p>
+                            <button
+                                type="submit"
+                                class="twitter-btn btn-clr-text"
+                            >
+                                Login with Twitter
+                            </button>
+                            <p class="sign-in-desc">
+                                Already have an account? Login
+                                <a class="sign-in-link" href="#">here</a>
+                            </p>
+                        </form>
+                    </div>
                 </div>
-                <div>
-                  <a href="#" class="cta btn">Add Guide</a>
-                </div>
-              </div>
-              <p class="guide__desc">
-                I am a huge traveler, so I know how it feels like to be in a
-                foreign country. I was born and raised here in Reykavik and can
-                show you anything you'd like to see.
-              </p>
-            </div>
-          </div>
-        </div>
+            </section>
 
-        <div class="guide__wrap">
-          <div class="guide">
-            <img
-              class="guide__img"
-              src="images/andrei-mike-QXju-EIkTiM-unsplash.jpg"
-              alt="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, delectus!"
-            />
-            <div class="guide__body--wrap">
-              <div class="guide__header">
-                <div>
-                  <p class="guide__title">Andrei</p>
-                  <p class="guide__tour">Rate: $50 p/hr</p>
+            <!-- EXPERIENCES SECTION -->
+            <section id="experiences">
+                <div class="experiences__container">
+                    <div class="experiences__wrap">
+                        <div class="northern-lights">
+                            <img
+                                class="experiences__img"
+                                src="images/nicolas-j-leclercq-va_nrBLonf8-unsplash (1).jpg"
+                                alt="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, delectus!"
+                            />
+                            <div class="experiences__body--wrap">
+                                <div class="experiences__header">
+                                    <div>
+                                        <p class="experiences__title">
+                                            Northern Lights
+                                        </p>
+                                        <p class="experiences__tour">
+                                            Tour: $120
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="cta btn"
+                                            >Add Experience</a
+                                        >
+                                    </div>
+                                </div>
+                                <p class="experiences__desc">
+                                    The northern lights are a truly spectacular
+                                    natural phenomenon. It's one of those things
+                                    that even seasoned Icelanders never get
+                                    enough of. They are often seen dancing
+                                    across the Icelandic Arctic sky in fantastic
+                                    colours and vibrant hues.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experiences__wrap">
+                        <div class="black-sand">
+                            <img
+                                class="experiences__img"
+                                src="images/adam-jang-MLKrf51NV8w-unsplash (1).jpg"
+                                alt="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, delectus!"
+                            />
+                            <div class="experiences__body--wrap">
+                                <div class="experiences__header">
+                                    <div>
+                                        <p class="experiences__title">
+                                            Three Elves
+                                        </p>
+                                        <p class="experiences__tour">
+                                            Tour: $60
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="cta btn"
+                                            >Add Experience</a
+                                        >
+                                    </div>
+                                </div>
+                                <p class="experiences__desc">
+                                    JUST OUTSIDE THE TINY TOWN of Vik, Iceland
+                                    (pop. approx. 300) three black basalt
+                                    columns called the Reynisdrangar protrude
+                                    from the stormy North Atlantic. Legend has
+                                    it that the rocks are three trolls, caught
+                                    out too late and frozen by the early morning
+                                    sunlight.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experiences__wrap">
+                        <div class="waterfall">
+                            <img
+                                class="experiences__img"
+                                src="images/jonatan-pie-VlH2eHyE_50-unsplash.jpg"
+                                alt="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, delectus!"
+                            />
+                            <div class="experiences__body--wrap">
+                                <div class="experiences__header">
+                                    <div>
+                                        <p class="experiences__title">
+                                            Skogafoss
+                                        </p>
+                                        <p class="experiences__tour">
+                                            Tour: $80
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="cta btn"
+                                            >Add Experience</a
+                                        >
+                                    </div>
+                                </div>
+                                <p class="experiences__desc">
+                                    Skógafoss is one of the biggest waterfalls
+                                    in Iceland, with a drop of some 60 meters
+                                    and a width of 25 meters, and you can walk
+                                    right up to, but be prepared to be drenched.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experiences__wrap">
+                        <div class="glacier">
+                            <img
+                                class="experiences__img"
+                                src="images/jeremy-bishop-h7bQ8VEZtws-unsplash.jpg"
+                                alt="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, delectus!"
+                            />
+                            <div class="experiences__body--wrap">
+                                <div class="experiences__header">
+                                    <div>
+                                        <p class="experiences__title">
+                                            Ice Bergs
+                                        </p>
+                                        <p class="experiences__tour">
+                                            Tour: $70
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="cta btn"
+                                            >Add Experience</a
+                                        >
+                                    </div>
+                                </div>
+                                <p class="experiences__desc">
+                                    Jokulsarlon is one of Iceland's natural
+                                    crown jewels, and the nearby black beach has
+                                    coined the name Diamond Beach, as the ice
+                                    chunks lying on it resemble diamonds
+                                    glistening in the sun.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experiences__wrap">
+                        <div class="black-sand">
+                            <img
+                                class="experiences__img"
+                                src="images/norris-niman-ABtmE3jhaPQ-unsplash.jpg"
+                                alt="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, delectus!"
+                            />
+                            <div class="experiences__body--wrap">
+                                <div class="experiences__header">
+                                    <div>
+                                        <p class="experiences__title">
+                                            Black Sand
+                                        </p>
+                                        <p class="experiences__tour">
+                                            Tour: $40
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="cta btn"
+                                            >Add Experience</a
+                                        >
+                                    </div>
+                                </div>
+                                <p class="experiences__desc">
+                                    Iceland is a country full of volcanic
+                                    activity, and this is the reason behind the
+                                    black sand. The black sediment on the beach
+                                    has been formed by boiling hot lava, from
+                                    the currently dormant volcano, floating
+                                    across the beach, then cooling and
+                                    solidifying when hitting the cold water.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experiences__wrap">
+                        <div class="road-trip">
+                            <img
+                                class="experiences__img"
+                                src="images/rory-hennessey-PBrovES5uuI-unsplash.jpg"
+                                alt="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, delectus!"
+                            />
+                            <div class="experiences__body--wrap">
+                                <div class="experiences__header">
+                                    <div>
+                                        <p class="experiences__title">
+                                            Explorer
+                                        </p>
+                                        <p class="experiences__tour">
+                                            Tour: $50
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="cta btn"
+                                            >Add Experience</a
+                                        >
+                                    </div>
+                                </div>
+                                <p class="experiences__desc">
+                                    There’s nothing quite like an Iceland road
+                                    trip. Especially when driving past
+                                    incredible volcanoes, icebergs, waterfalls,
+                                    and magical northern lights on Iceland’s
+                                    Ring Road.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                  <a href="#" class="cta btn">Add Guide</a>
-                </div>
-              </div>
-              <p class="guide__desc">
-                I'm here if you want to explore the most beautiful spots. I've
-                been to 25 countries so far, so I know exactly what a traveler
-                would like to see when they travel.
-              </p>
-            </div>
-          </div>
-        </div>
+            </section>
 
-        <div class="guide__wrap">
-          <div class="guide">
-            <img
-              class="guide__img"
-              src="images/willian-justen-de-vasconcellos-lQ6nepOAGg4-unsplash.jpg"
-              alt="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, delectus!"
-            />
-            <div class="guide__body--wrap">
-              <div class="guide__header">
-                <div>
-                  <p class="guide__title">Anne</p>
-                  <p class="guide__tour">Rate: $40 p/hr</p>
-                </div>
-                <div>
-                  <a href="#" class="cta btn">Add Guide</a>
-                </div>
-              </div>
-              <p class="guide__desc">
-                I studied Business Management and Tourism in Madrid and Bremen
-                (Germany). I am passionate about traveling, meeting new people
-                and discovering different cultures. I am always hungry for food,
-                wine & beer and art! And I also love reading and attending
-                theatre shows.
-              </p>
-            </div>
-          </div>
-        </div>
+            <!-- GUIDE SECTION -->
+            <section id="guide">
+                <h3 class="guide__header--main">
+                    Choose your guide. A great guide can go a long way.
+                </h3>
+                <div class="guide__container">
+                    <div class="guide__wrap">
+                        <div class="guide">
+                            <img
+                                class="guide__img"
+                                src="images/rodrigo-ramos-PAz-kD7cqC8-unsplash.jpg"
+                                alt="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, delectus!"
+                            />
+                            <div class="guide__body--wrap">
+                                <div class="guide__header">
+                                    <div>
+                                        <p class="guide__title">Rodrigo</p>
+                                        <p class="guide__tour">
+                                            Rate: $20 p/hr
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="cta btn"
+                                            >Add Guide</a
+                                        >
+                                    </div>
+                                </div>
+                                <p class="guide__desc">
+                                    I am a huge traveler, so I know how it feels
+                                    like to be in a foreign country. I was born
+                                    and raised here in Reykavik and can show you
+                                    anything you'd like to see.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
-        <div class="guide__wrap">
-          <div class="guide">
-            <img
-              class="guide__img"
-              src="images/holly-mandarich-UVyOfX3v0Ls-unsplash.jpg"
-              alt="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, delectus!"
-            />
-            <div class="guide__body--wrap">
-              <div class="guide__header">
-                <div>
-                  <p class="guide__title">Holly</p>
-                  <p class="guide__tour">Rate: $30 p/hr</p>
-                </div>
-                <div>
-                  <a href="#" class="cta btn">Add Guide</a>
-                </div>
-              </div>
-              <p class="guide__desc">
-                I absolutely love the outdoors and the natural beauty of nature.
-                I can show you all of the majestic scenery that Iceland has to
-                offer.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+                    <div class="guide__wrap">
+                        <div class="guide">
+                            <img
+                                class="guide__img"
+                                src="images/andrei-mike-QXju-EIkTiM-unsplash.jpg"
+                                alt="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, delectus!"
+                            />
+                            <div class="guide__body--wrap">
+                                <div class="guide__header">
+                                    <div>
+                                        <p class="guide__title">Andrei</p>
+                                        <p class="guide__tour">
+                                            Rate: $50 p/hr
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="cta btn"
+                                            >Add Guide</a
+                                        >
+                                    </div>
+                                </div>
+                                <p class="guide__desc">
+                                    I'm here if you want to explore the most
+                                    beautiful spots. I've been to 25 countries
+                                    so far, so I know exactly what a traveler
+                                    would like to see when they travel.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
-    <footer>
-      <p>© 2022 Iceland Exploration, Inc.</p>
-    </footer>
-    <script src="scripts.js"></script>
-  </body>
+                    <div class="guide__wrap">
+                        <div class="guide">
+                            <img
+                                class="guide__img"
+                                src="images/willian-justen-de-vasconcellos-lQ6nepOAGg4-unsplash.jpg"
+                                alt="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, delectus!"
+                            />
+                            <div class="guide__body--wrap">
+                                <div class="guide__header">
+                                    <div>
+                                        <p class="guide__title">Anne</p>
+                                        <p class="guide__tour">
+                                            Rate: $40 p/hr
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="cta btn"
+                                            >Add Guide</a
+                                        >
+                                    </div>
+                                </div>
+                                <p class="guide__desc">
+                                    I studied Business Management and Tourism in
+                                    Madrid and Bremen (Germany). I am passionate
+                                    about traveling, meeting new people and
+                                    discovering different cultures. I am always
+                                    hungry for food, wine & beer and art! And I
+                                    also love reading and attending theatre
+                                    shows.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="guide__wrap">
+                        <div class="guide">
+                            <img
+                                class="guide__img"
+                                src="images/holly-mandarich-UVyOfX3v0Ls-unsplash.jpg"
+                                alt="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, delectus!"
+                            />
+                            <div class="guide__body--wrap">
+                                <div class="guide__header">
+                                    <div>
+                                        <p class="guide__title">Holly</p>
+                                        <p class="guide__tour">
+                                            Rate: $30 p/hr
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="cta btn"
+                                            >Add Guide</a
+                                        >
+                                    </div>
+                                </div>
+                                <p class="guide__desc">
+                                    I absolutely love the outdoors and the
+                                    natural beauty of nature. I can show you all
+                                    of the majestic scenery that Iceland has to
+                                    offer.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>© 2022 Iceland Exploration, Inc.</p>
+        </footer>
+        <script src="scripts.js"></script>
+    </body>
 </html>

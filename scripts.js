@@ -1,33 +1,19 @@
-// const signUpBtn = document.querySelector(".btn__sign-up");
+// Modal items
+const modal = document.getElementById("email-modal-container");
+const openBtn = document.querySelector(".btn__sign-up");
+const closeBtn = document.querySelector(".close-btn");
 
-// signUpBtn.addEventListener("click", function () {
-//   toggle();
-// });
+// Click events
+openBtn.addEventListener("click", () => {
+    modal.style.display = "block";
+});
 
-// function toggle() {
-//   const blur = document.querySelector(".blur");
-//   blur.classList.toggle("active");
+closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+});
 
-//   const popup = document.querySelector(".sign-up-form");
-//   popup.classList.toggle("active");
-// }
-
-const signUpForm = document.querySelector(".sign-up-form");
-const closeBtn = document.querySelector(".closebtn");
-const signUpBtn = document.querySelector(".btn__sign-up");
-const hero = document.querySelector(".hero");
-
-signUpBtn.onclick = () => {
-  signUpForm.classList.toggle("active");
-};
-
-closeBtn.onclick = () => {
-  signUpForm.classList.toggle("active");
-};
-
-window.onclick = function (event) {
-  console.log(event);
-  if (event.target == hero) {
-    signUpForm.classList.remove("active");
-  }
-};
+window.addEventListener("click", (e) => {
+    if (e.target === modal) {
+        modal.style.display = "none";
+    }
+});

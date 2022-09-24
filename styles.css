@@ -1,447 +1,306 @@
+@import url("modal.css");
+
 /* Root Styles */
 
 :root {
-  --primary: #23232e;
-  --clr-aqua: #33f5e0;
-  --clr-lavender: #8b8dff;
-  --clr-lavender-light: #C4CEFD;
+    --primary: #23232e;
+    --clr-aqua: #33f5e0;
+    --clr-lavender: #8b8dff;
+    --clr-lavender-light: #c4cefd;
 }
 
 /* Default setting reset */
 *,
 ::before,
 ::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* Base Styles */
 body {
-  font-family: "Roboto", sans-serif;
-  color: var(--primary);
-  line-height: 1.5;
-  letter-spacing: 1px;
+    font-family: "Roboto", sans-serif;
+    color: var(--primary);
+    line-height: 1.5;
+    letter-spacing: 1px;
 }
 
 li {
-  list-style: none;
+    list-style: none;
 }
 
 a {
-  text-decoration: none;
-  color: var(--primary);
+    text-decoration: none;
+    color: var(--primary);
 }
 
 img {
-  display: block;
-  max-width: 1;
+    display: block;
+    max-width: 1;
 }
 
 button {
-  border: none;
-  cursor: pointer;
-  text-decoration: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 input {
-  outline-color: var(--clr-aqua);
+    outline-color: var(--clr-aqua);
 }
 
 /* Nav */
+
 nav {
-  position: absolute;
-  color: #fff;
-  right: 0;
-  padding: 2em;
+    position: absolute;
+    color: #fff;
+    right: 0;
+    padding: 2em;
 }
 
 .nav__list {
-  display: flex;
-  align-items: center;
-  gap: 0.25em;
+    display: flex;
+    align-items: center;
+    gap: 0.25em;
 }
 
 .btn {
-  background: var(--clr-aqua);
-  outline-color: var(--clr-lavender);
-  border-radius: 100px;
-  font-size: inherit;
+    background: var(--clr-aqua);
+    outline-color: var(--clr-lavender);
+    border-radius: 100px;
+    font-size: inherit;
 }
 
 .btn-clr-text {
-  color: var(--primary);
+    color: var(--primary);
 }
 
 .btn__sign-in {
-  font-family: inherit;
-  font-weight: 400;
-  background: transparent;
-  outline-color: var(--clr-aqua);
-  border-radius: 20px;
-  padding: 0.4em 1em;
-  font-size: 1.25rem;
-  color: #fff;
+    font-family: inherit;
+    font-weight: 400;
+    background: transparent;
+    outline-color: var(--clr-aqua);
+    border-radius: 20px;
+    padding: 0.4em 1em;
+    font-size: 1.25rem;
+    color: #fff;
 }
 
 .btn__sign-up {
-  font-family: inherit;
-  padding: 0.5em 1.5em;
-  font-size: 1.1rem;
-  font-weight: 500;
+    font-family: inherit;
+    padding: 0.5em 1.5em;
+    font-size: 1.1rem;
+    font-weight: 500;
 }
 
 .cta {
-  font-size: 0.8rem;
-  padding: 0.75em 1.5em;
-  color: var(--primary);
+    font-size: 0.8rem;
+    padding: 0.75em 1.5em;
+    color: var(--primary);
 }
 
 .btn:hover,
-.sign-up-btn:hover,
-.twitter-btn:hover,
-.btn:focus,
-.sign-up-btn:focus,
-.twitter-btn:focus {
-  opacity: 0.8;
+.btn:focus {
+    opacity: 0.8;
 }
+
 .btn__sign-in:hover,
 .btn__sign-in:focus {
-  opacity: 0.8;
+    opacity: 0.8;
 }
 .cta:hover,
 .cta:focus {
-  box-shadow: 0 0 10px lightgrey;
-  opacity: 0.9;
-}
-
-/* Sign-up form */
-
-.sign-up-form {
-  display: none;
-  position: absolute;
-  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
-  background: #fff;
-  padding: 1em;
-  text-align: center;
-  color: #23232e;
-  border-radius: 20px;
-  padding: 3em;
-  max-width: 450px;
-}
-
-.sign-up-form.active {
-  display: block;
-}
-
-.fa-solid {
-  color: var(--primary);
-}
-
-.fa-key {
-  font-size: 3rem;
-  margin-bottom: 10px;
-}
-
-.fa-xmark {
-  position: absolute;
-  font-size: 1.5rem;
-  right: 15px;
-  top: 10px;
-  cursor: pointer;
-}
-
-.sign-up-title {
-  color: var(--primary);
-  margin-bottom: 10px;
-}
-
-.input-box {
-  font-size: 1rem;
-  border-radius: 20px;
-  padding: 10px 20px;
-  margin: 10px 0;
-  width: 100%;
-  border: 2px solid var(--primary);
-  letter-spacing: 1px;
-}
-
-.input-box::placeholder {
-  font-size: 0.9rem;
-}
-
-.terms-wrap {
-  display: flex;
-  justify-content: center;
-  font-size: 0.8rem;
-}
-
-.sign-up-desc {
-  margin-left: 8px;
-}
-
-.sign-up-btn {
-  background: #33f5e0;
-  width: 100%;
-  padding: 10px;
-  border-radius: 20px;
-  font-size: 15px;
-  margin: 10px 0;
-  font-weight: 500;
-  outline-color: var(--clr-lavender);
-}
-
-.twitter-btn {
-  background: var(--clr-lavender);
-  outline-color: var(--clr-aqua);
-}
-
-hr {
-  margin: 0 auto;
-  margin-top: 20px;
-  width: 80%;
-}
-
-.or {
-  background: #fff;
-  width: 30px;
-  margin: -13px auto 10px;
-}
-
-.sign-in-link {
-  text-decoration: underline;
-  color: blue;
-}
-
-#closebtn {
-  position: absolute;
-  top: -10;
-  right: -10;
-  width: 30px;
-  height: 30px;
-  border: none;
-  outline: none;
-  border-radius: 50%;
-  font-size: 20px;
-  color: red;
-  cursor: pointer;
+    box-shadow: 0 0 10px lightgrey;
+    opacity: 0.9;
 }
 
 /* Hero */
-.hero {
-  background-image: url("images/iceland-the-northern-lights.png");
-  background-size: cover;
-  color: #fff;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .hero__main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+    background-image: url("images/iceland-the-northern-lights.png");
+    background-size: cover;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .hero__title {
-  font-size: 4rem;
-  user-select: none;
+    font-size: 4rem;
+    user-select: none;
 }
 
 .hero__desc {
-  font-weight: 400;
-  margin-bottom: 1.25em;
-  user-select: none;
+    font-weight: 400;
+    margin-bottom: 1.25em;
+    user-select: none;
 }
 
 .search {
-  font-size: 1.5rem;
-  font-weight: 700;
-  border-radius: 100px;
-  border: none;
-  padding: 0.5em 1.25em;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-radius: 100px;
+    border: none;
+    padding: 0.5em 1.25em;
 }
 
-input::placeholder {
-  font-size: 1.25rem;
-  font-weight: 500;
-  text-align: center;
+.search::placeholder {
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-align: center;
 }
 
 /* Experiences & Guide*/
 
 .experiences__container,
 .guide__container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 25px;
-  padding: 5em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 5em;
 }
 
 .experiences__wrap {
-  position: relative;
-  width: 30%;
+    position: relative;
+    width: 30%;
 }
 
 .guide__wrap {
-  width: 20%;
+    width: 20%;
 }
 
 .guide__header--main {
-  font-size: 2rem;
-  font-weight: normal;
-  text-align: center;
-  padding: 0.25em 1em;
+    font-size: 2rem;
+    font-weight: normal;
+    text-align: center;
+    padding: 0.25em 1em;
 }
 
 .experiences__img,
 .guide__img {
-  border-radius: 20px;
-  margin-bottom: 0.8em;
-  width: 100%;
+    border-radius: 20px;
+    margin-bottom: 0.8em;
+    width: 100%;
 }
 
 .experiences__img {
-  max-width: 600px;
+    max-width: 600px;
 }
 
 .guide__img {
-  max-width: 400px;
+    max-width: 400px;
 }
 
 .experiences__header,
 .guide__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .experiences__title,
 .guide__title {
-  font-size: 1.25rem;
+    font-size: 1.25rem;
 }
 
 .experiences__tour,
 .guide__tour {
-  font-weight: 300;
-  font-size: smaller;
-  color: darkgray;
+    font-weight: 300;
+    font-size: smaller;
+    color: darkgray;
 }
 
 .experiences__desc,
 .guide__desc {
-  margin-top: 1em;
-  font-weight: 300;
-  font-size: 0.9rem;
+    margin-top: 1em;
+    font-weight: 300;
+    font-size: 0.9rem;
 }
 
 .experiences__desc::selection,
 .guide__desc::selection {
-  background: var(--clr-aqua);
+    background: var(--clr-aqua);
 }
 
 /* Footer */
 footer {
-  display: flex;
-  justify-content: center;
-  background: var(--clr-aqua);
-  align-items: center;
-  font-size: 0.8rem;
-  margin-top: 3em;
-  padding: 5em;
+    display: flex;
+    justify-content: center;
+    background: var(--clr-aqua);
+    align-items: center;
+    font-size: 0.8rem;
+    margin-top: 3em;
+    padding: 5em;
 }
 
 /* ****************************** Small screens ****************************** */
 
 @media only screen and (max-width: 1180px) {
-  .experiences__wrap {
-    position: relative;
-    width: 45%;
-  }
+    .experiences__wrap {
+        position: relative;
+        width: 45%;
+    }
 
-  .guide__wrap {
-    width: 45%;
-  }
+    .guide__wrap {
+        width: 45%;
+    }
 
-  .experiences__header,
-  .guide__header {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1em;
-    margin-bottom: 2em;
-  }
+    .experiences__header,
+    .guide__header {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1em;
+        margin-bottom: 2em;
+    }
 }
 
 /* ****************************** Mobile ****************************** */
 
 @media only screen and (max-width: 600px) {
-  #hero {
-    margin-bottom: 1em;
-  }
+    #hero {
+        margin-bottom: 1em;
+    }
 
-  nav {
-    padding: 1em;
-  }
+    nav {
+        padding: 1em;
+    }
 
-  .nav__list {
-    font-size: 1rem;
-  }
 
-  .cta {
-    font-size: 0.8rem;
-  }
+    .hero__title {
+        font-size: 3rem;
+    }
 
-  .hero__title {
-    font-size: 3rem;
-  }
+    .hero__desc {
+        font-size: 1rem;
+    }
 
-  .hero__desc {
-    font-size: 1rem;
-  }
+    .modal-content {
+        width: 80%;
+    }
 
-  .search {
-    font-size: 1rem;
-  }
+    .experiences__container,
+    .guide__container {
+        flex-direction: column;
+        padding: 2em;
+    }
 
-  input::placeholder {
-    font-size: 1rem;
-  }
+    .experiences__wrap {
+        position: relative;
+        width: 100%;
+    }
 
-  .sign-up-form {
-    display: none;
-    position: absolute;
-    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
-    background: #fff;
-    padding: 1em;
-    text-align: center;
-    color: #23232e;
-    border-radius: 20px;
-    padding: 2em;
-    margin: 1em;
-  }
+    .guide__wrap {
+        width: 100%;
+    }
 
-  .experiences__container,
-  .guide__container {
-    flex-direction: column;
-    padding: 2em;
-  }
-
-  .experiences__wrap {
-    position: relative;
-    width: 100%;
-  }
-
-  .guide__wrap {
-    width: 100%;
-  }
-
-  .experiences__desc,
-  .guide__desc {
-    margin-bottom: 1em;
-  }
+    .experiences__desc,
+    .guide__desc {
+        margin-bottom: 1em;
+    }
 }
