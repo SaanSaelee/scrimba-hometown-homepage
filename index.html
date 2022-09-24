@@ -63,7 +63,7 @@
 
             <section id="form" class="form">
                 <!-- Start Form -->
-                <div class="modal" id="email-modal-container">
+                <div class="modal" id="modal-container">
                     <div class="modal-content">
                         <form
                             action="/"
@@ -81,9 +81,8 @@
                                     id="name"
                                     name="name"
                                     placeholder="Enter your name"
-                                    required
                                 />
-                                <p class="error">Error Message</p>
+                                <p class="error-msg">Error Message</p>
                             </div>
                             <div class="form-validation">
                                 <input
@@ -92,9 +91,8 @@
                                     id="email"
                                     name="email"
                                     placeholder="Enter your email"
-                                    required
                                 />
-                                <p class="error">Error Message</p>
+                                <p class="error-msg">Error Message</p>
                             </div>
                             <div class="form-validation">
                                 <input
@@ -103,9 +101,8 @@
                                     id="password"
                                     name="password"
                                     placeholder="Enter your password"
-                                    required
                                 />
-                                <p class="error">Error Message</p>
+                                <p class="error-msg">Error Message</p>
                             </div>
                             <div class="form-validation">
                                 <input
@@ -115,7 +112,7 @@
                                     name="password"
                                     placeholder="Confirm your password"
                                 />
-                                <p class="error">Error Message</p>
+                                <p class="error-msg">Error Message</p>
                             </div>
                             <div class="terms-wrap">
                                 <input type="checkbox" id="terms" required />
@@ -124,7 +121,7 @@
                                 >
                             </div>
                             <button
-                                type="button"
+                                type="submit"
                                 class="modal-sign-up-btn btn-clr-text"
                             >
                                 Sign Up
