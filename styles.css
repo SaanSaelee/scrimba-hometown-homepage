@@ -161,7 +161,8 @@ nav {
 
 .search {
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 500;
+    letter-spacing: inherit;
     border-radius: 100px;
     padding: 0.5em 1.25em;
     border: none;
