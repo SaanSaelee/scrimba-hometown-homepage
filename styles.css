@@ -1,4 +1,5 @@
 @import url("modal.css");
+@import url('experiences.css');
 
 /* Root Styles */
 
@@ -155,79 +156,6 @@ nav {
     text-align: center;
 }
 
-/* Experiences & Guide*/
-
-.experiences__container,
-.guide__container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 25px;
-    padding: 3em 5em;
-}
-
-.experiences__wrap {
-    position: relative;
-    width: 30%;
-}
-
-.guide__wrap {
-    width: 20%;
-}
-
-.guide__header--main {
-    font-size: 2rem;
-    font-weight: normal;
-    text-align: center;
-    padding: 0.25em 1em;
-}
-
-.experiences__img,
-.guide__img {
-    border-radius: 20px;
-    margin-bottom: 0.8em;
-    width: 100%;
-}
-
-.experiences__img {
-    max-width: 600px;
-}
-
-.guide__img {
-    max-width: 400px;
-}
-
-.experiences__header,
-.guide__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.experiences__title,
-.guide__title {
-    font-size: 1.25rem;
-}
-
-.experiences__tour,
-.guide__tour {
-    font-weight: 300;
-    font-size: smaller;
-    color: darkgray;
-}
-
-.experiences__desc,
-.guide__desc {
-    margin-top: 1em;
-    font-weight: 300;
-    font-size: 0.9rem;
-}
-
-.experiences__desc::selection,
-.guide__desc::selection {
-    background: var(--clr-aqua);
-}
-
 /* Footer */
 footer {
     display: flex;
@@ -272,13 +200,12 @@ footer {
         padding: 1em;
     }
 
-
     .hero__title {
         font-size: 2.2rem;
     }
 
     .hero__desc {
-        font-size: .8rem;
+        font-size: 0.8rem;
     }
 
     .search {
@@ -312,7 +239,7 @@ footer {
     .experiences__img {
         max-width: 100%;
     }
-    
+
     .guide__img {
         max-width: 100%;
     }
