@@ -48,6 +48,7 @@ button {
 
 input {
     outline-color: var(--clr-aqua);
+    outline-offset: 2px;
 }
 
 /* Nav */
@@ -144,8 +145,9 @@ nav {
     font-size: 1.5rem;
     font-weight: 700;
     border-radius: 100px;
-    border: none;
     padding: 0.5em 1.25em;
+    border: none;
+    outline: none;
 }
 
 .search::placeholder {
@@ -273,15 +275,24 @@ footer {
 
 
     .hero__title {
-        font-size: 3rem;
+        font-size: 2.2rem;
     }
 
     .hero__desc {
+        font-size: .8rem;
+    }
+
+    .search {
+        font-size: 1.15rem;
+        font-weight: 400;
+    }
+
+    .search::placeholder {
         font-size: 1rem;
     }
 
     .modal-content {
-        width: 80%;
+        width: 85%;
     }
 
     .experiences__container,
@@ -297,6 +308,14 @@ footer {
 
     .guide__wrap {
         width: 100%;
+    }
+
+    .experiences__img {
+        max-width: 100%;
+    }
+    
+    .guide__img {
+        max-width: 100%;
     }
 
     .experiences__desc,
