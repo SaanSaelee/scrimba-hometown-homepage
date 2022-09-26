@@ -16,18 +16,20 @@
     display: none;
 }
 
-.modal-content {
-    background: #fff;
-    margin: 10% auto;
-    max-width: 500px;
-    width: 60%;
-    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+.modal__content {
     position: relative;
-    border-radius: 20px;
-    min-height: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #fff;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    max-width: 500px;
+    min-height: 500px;
+    width: 60%;
 }
 
 .close-btn {
@@ -45,13 +47,7 @@
     transition: 0.2s ease-out;
 }
 
-.modal-form {
-    /* position: absolute; */
-    /* top: 50%; */
-    /* left: 50%; */
-    /* transform: translate(-50%, -50%); */
-    /* width: 90%; */
-    /* height: 90%; */
+.modal__form {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -66,30 +62,30 @@
     margin-bottom: 10px;
 }
 
-.modal-title {
+.modal__title {
     color: var(--primary);
     margin-bottom: 1rem;
 }
 
-.form-validation {
+.moda__form-validation {
     margin-bottom: 1.25rem;
     width: 100%;
 }
 
-.form-validation.error {
+.moda__form-validation.error {
     position: relative;
     border: 2px solid var(--errorColor);
     border-radius: 20px;
 }
 
-.form-validation.valid {
+.moda__form-validation.valid {
     position: relative;
     border: 2px solid var(--validColor);
     border-radius: 20px;
     margin-bottom: 0.5rem;
 }
 
-.form-validation .error-msg {
+.moda__form-validation .error-msg {
     font-size: 0.7rem;
     margin-top: 1rem;
     color: var(--errorColor);
@@ -98,7 +94,7 @@
     display: none;
 }
 
-.form-validation.error .error-msg {
+.moda__form-validation.error .error-msg {
     display: block;
 }
 

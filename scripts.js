@@ -7,7 +7,7 @@
 // });
 
 // Modal items
-const modal = document.getElementById("modal-container");
+const modal = document.getElementById("modal__container");
 const openBtn = document.querySelector(".btn__sign-up");
 const closeBtn = document.querySelector(".close-btn");
 
@@ -36,7 +36,7 @@ const passwordConfirm = document.getElementById("password-confirm");
 // Show error message
 function showError(input, message) {
     const formValidation = input.parentElement;
-    formValidation.className = "form-validation error";
+    formValidation.className = "modal__form-validation error";
 
     const errorMessage = formValidation.querySelector("p");
     errorMessage.innerText = message;
@@ -45,7 +45,7 @@ function showError(input, message) {
 // Show valid message
 function showValid(input) {
     const formValidation = input.parentElement;
-    formValidation.className = "form-validation valid";
+    formValidation.className = "modal__form-validation valid";
 }
 
 // Check required fields
