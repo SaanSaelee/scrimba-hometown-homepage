@@ -35,10 +35,11 @@ const passwordConfirm = document.getElementById("password-confirm");
 
 // Show error message
 function showError(input, message) {
+    // targeting parent class which is each validation div
     const formValidation = input.parentElement;
     formValidation.className = "modal__form-validation error";
 
-    const errorMessage = formValidation.querySelector("p");
+    const errorMessage = formValidation.querySelector(".error-msg");
     errorMessage.innerText = message;
 }
 
