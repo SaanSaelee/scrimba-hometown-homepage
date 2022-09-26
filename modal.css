@@ -67,25 +67,25 @@
     margin-bottom: 1rem;
 }
 
-.moda__form-validation {
+.modal__form-validation {
     margin-bottom: 1.25rem;
     width: 100%;
 }
 
-.moda__form-validation.error {
+.modal__form-validation.error {
     position: relative;
     border: 2px solid var(--errorColor);
     border-radius: 20px;
 }
 
-.moda__form-validation.valid {
+.modal__form-validation.valid {
     position: relative;
     border: 2px solid var(--validColor);
     border-radius: 20px;
     margin-bottom: 0.5rem;
 }
 
-.moda__form-validation .error-msg {
+.modal__form-validation .error-msg {
     font-size: 0.7rem;
     margin-top: 1rem;
     color: var(--errorColor);
@@ -94,7 +94,7 @@
     display: none;
 }
 
-.moda__form-validation.error .error-msg {
+.modal__form-validation.error .error-msg {
     display: block;
 }
 
