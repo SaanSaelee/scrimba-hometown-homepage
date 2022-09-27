@@ -91,3 +91,31 @@ form.addEventListener("submit", (e) => {
     checkLength(passwordConfirm, 8, 25);
     passwordMatch(password, passwordConfirm);
 });
+
+// *****************************
+
+// Image heart
+
+const heartBtn = document.querySelectorAll(".fa-heart");
+
+heartBtn.forEach((e) => {
+    e.addEventListener("click", () => {
+        e.classList.toggle("active");
+    });
+});
+
+// *****************************
+
+// Shopping Cart
+const shoppingCart = document.querySelector(".fa-cart-shopping");
+const cartContent = document.querySelector(".cart__content");
+const cartCloseBtn = document.querySelector(".btn__close--cart");
+const cartContainer = document.querySelector(".cart__container");
+
+shoppingCart.addEventListener("click", () => {
+    cartContent.classList.toggle("active");
+});
+
+cartCloseBtn.addEventListener("click", () => {
+    cartContent.classList.remove("active");
+});

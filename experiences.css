@@ -1,3 +1,7 @@
+:root {
+    --clr-heartred: #e94560;
+}
+
 /* Experiences & Guide*/
 
 .experiences__container,
@@ -69,4 +73,25 @@
 .experiences__desc::selection,
 .guide__desc::selection {
     background: var(--clr-aqua);
+}
+
+.img__wrap {
+    position: relative;
+}
+
+.fa-heart {
+    position: absolute;
+    color: white;
+    top: 4%;
+    right: 3%;
+    font-size: 1.25rem;
+    transition: color 500ms ease;
+}
+
+.fa-heart.active {
+    color: var(--clr-heartred);
+}
+
+.fa-heart:hover {
+    cursor: pointer;
 }
