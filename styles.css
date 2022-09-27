@@ -72,7 +72,7 @@ nav {
     max-width: 50px;
 }
 
-.logo-bottom {
+.logo__footer {
     max-width: 50px;
     margin: 0 auto 1em;
 }
@@ -86,14 +86,10 @@ nav {
 }
 
 .btn {
-    background: var(--clr-aqua);
-    outline-color: var(--clr-lavender);
-    border-radius: 100px;
+    font-family: inherit;
     font-size: inherit;
-}
-
-.btn-clr-text {
     color: var(--primary);
+    border-radius: 100px;
 }
 
 .btn__sign-in {
@@ -105,34 +101,62 @@ nav {
     padding: 0.4em 1em;
     font-size: 1.25rem;
     color: #fff;
-}
-
-.btn__sign-up {
-    font-family: inherit;
-    padding: 0.5em 1.5em;
-    font-size: 1.1rem;
-    font-weight: 500;
-}
-
-.cta {
-    font-size: 0.8rem;
-    padding: 0.75em 1.5em;
-    color: var(--primary);
-}
-
-.btn:hover,
-.btn:focus {
-    opacity: 0.8;
+    transition: 500ms ease;
 }
 
 .btn__sign-in:hover,
 .btn__sign-in:focus {
-    opacity: 0.8;
+    color: var(--clr-aqua);
 }
+
+.btn__sign-up {
+    padding: 0.5em 1.5em;
+    font-size: 1.1rem;
+    font-weight: 500;
+    outline-color: var(--clr-lavender);
+    background: linear-gradient(
+            to left,
+            var(--clr-aqua) 10%,
+            var(--clr-lavender) 60%
+        )
+        right;
+    background-size: 200% 100%;
+    transition: 400ms linear;
+}
+
+.btn__sign-up:hover,
+.btn__sign-up:focus {
+    background: left;
+}
+
+.cart__nav {
+    cursor: pointer;
+    transition: 500ms ease;
+    vertical-align: middle;
+    width: 36px;
+    margin-left: 0.75em;
+}
+
+.cart__nav:hover {
+    opacity: 0.4;
+}
+
+.cta {
+    background: linear-gradient(
+            to left,
+            var(--clr-aqua) 10%,
+            var(--clr-lavender) 70%
+        )
+        right;
+    background-size: 200%;
+    outline-color: var(--clr-lavender);
+    font-size: 0.8rem;
+    padding: 0.75em 1.5em;
+}
+
 .cta:hover,
 .cta:focus {
-    box-shadow: 0 0 10px lightgrey;
-    opacity: 0.9;
+    box-shadow: 0 0 7px lightgray;
 }
 
 /* Hero */
