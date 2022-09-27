@@ -1,11 +1,3 @@
-// const menu = document.querySelector("#mobile-menu");
-// const menuLinks = document.querySelector(".nav-menu");
-
-// menu.addEventListener("click", function () {
-//     menu.classList.toggle("is-active");
-//     menuLinks.classList.toggle("acitve");
-// });
-
 // Modal items
 const modal = document.getElementById("modal__container");
 const openBtn = document.querySelector(".btn__sign-up");
