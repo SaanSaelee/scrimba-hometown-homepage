@@ -12,9 +12,9 @@
     color: var(--primary);
 }
 
-/* .cta:hover,
 .cta:focus {
-} */
+    outline-color: var(--clr-aqua);
+}
 
 .experiences__container,
 .guide__container {
