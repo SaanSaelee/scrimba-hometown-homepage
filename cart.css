@@ -12,11 +12,11 @@
     border-left: 4px solid var(--clr-aqua);
 }
 
+
+
 .cart__content.active {
     transform: translateX(0);
 }
-
-
 
 .btn__close--cart {
     position: absolute;
@@ -59,4 +59,15 @@
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
+}
+
+
+@media screen and (max-width: 500px) {
+    .cart__content {
+        min-width: 100%;
+    }
+
+    .cart__logo--header {
+        max-width: 70px;
+    }
 }
