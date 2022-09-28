@@ -97,7 +97,7 @@
     top: 4%;
     right: 3%;
     font-size: 1.25rem;
-    transition: color 400ms ease;
+    transition: color 300ms ease;
 }
 
 .fa-heart.active {

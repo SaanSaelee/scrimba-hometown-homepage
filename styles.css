@@ -101,7 +101,7 @@ nav {
     padding: 0.4em 1em;
     font-size: 1.25rem;
     color: #fff;
-    transition: 500ms ease;
+    transition: 300ms ease;
 }
 
 .btn__sign-in:hover,
@@ -136,7 +136,7 @@ nav {
 
 .cart__nav {
     cursor: pointer;
-    transition: 500ms ease;
+    transition: 300ms ease;
     vertical-align: middle;
     width: 36px;
     margin-left: 0.75em;
