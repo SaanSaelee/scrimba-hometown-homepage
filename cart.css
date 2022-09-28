@@ -5,7 +5,7 @@
     background: #fff;
     min-width: 500px;
     min-height: 100vh;
-    transition: 250ms ease-out;
+    transition: 300ms ease-out;
     z-index: 10;
     padding: 2em;
     transform: translateX(100%);

@@ -126,8 +126,15 @@ cartCloseBtn.addEventListener("click", () => {
 
 const hamburger = document.querySelector(".hamburger");
 const navbar = document.querySelector(".navbar");
+const navItem = document.querySelectorAll(".nav__item");
 
 hamburger.addEventListener("click", () => {
     navbar.classList.toggle("active");
 });
 
+navItem.forEach((item) => {
+    item.addEventListener("click", () => {
+        navbar.classList.remove("active");
+        openBtn.classList.remove("active");
+    });
+});
