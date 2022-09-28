@@ -148,6 +148,7 @@ nav {
 
 .hamburger {
     display: none;
+    cursor: pointer;
 }
 
 /* Call to action */
@@ -253,6 +254,13 @@ footer {
 /* ****************************** Mobile ****************************** */
 
 @media only screen and (max-width: 600px) {
+    .hamburger {
+        display: block;
+        position: fixed;
+        top: 2%;
+        right: 4%;
+    }
+
     #hero {
         margin-bottom: 1em;
     }
@@ -294,13 +302,6 @@ footer {
 
     .nav__list {
         flex-direction: column;
-    }
-
-    .hamburger {
-        display: block;
-        position: fixed;
-        top: 2%;
-        right: 4%;
     }
 
     .hero__title {
