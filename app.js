@@ -138,3 +138,5 @@ navItem.forEach((item) => {
         openBtn.classList.remove("active");
     });
 });
+
+// *****************************
